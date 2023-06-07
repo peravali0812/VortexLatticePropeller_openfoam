@@ -1,0 +1,32 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      propellerProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+propeller0
+{
+    propellerType         "n4148"; 
+    baseLocation        (5.0 1 0.5);
+    numBladePoints      10;           
+    pointDistType       "uniform";
+    epsilon              1;
+    smearRadius          0.25;
+    sphereRadiusScalar   1.1;
+    tipRootLossCorrType "none";
+    rotationDir         "cw";
+    Azimuth             0.0;
+    RotSpeed            72.02;
+    NacYaw              270.0;
+}
+
